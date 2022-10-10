@@ -29,13 +29,30 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.yellow,
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        leading: const Icon(Icons.arrow_back),
+        title: const Text(
+          "Mon super titre",
+        ),
+      ),
+      body: Center(
         child: Text(
           'Coucou',
           style: Theme.of(context).textTheme.headline1,
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          ),
+        ],
       ),
     );
   }
