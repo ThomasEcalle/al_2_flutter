@@ -6,9 +6,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(
-        'Home',
-        style: Theme.of(context).textTheme.headline1,
+      child: GestureDetector(
+        onTap: () {
+          print('Coucou les gens !');
+        },
+        child: Text(
+          'Home',
+          style: Theme.of(context).textTheme.headline1,
+        ),
       ),
     );
   }

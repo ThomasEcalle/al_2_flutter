@@ -1,5 +1,6 @@
 import 'package:al_2/ui/home_screen/home_screen.dart';
 import 'package:al_2/ui/settings_screen/settings_screen.dart';
+import 'package:al_2/ui/stateful_exercises/one.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,14 +17,12 @@ class MyApp extends StatelessWidget {
         textTheme: const TextTheme(
           headline1: TextStyle(
             fontSize: 24,
-            color: Colors.green,
+            color: Colors.red,
             fontWeight: FontWeight.bold,
           ),
         ),
       ),
-      home: const Home(
-        title: 'Un autre titre',
-      ),
+      home: One()
     );
   }
 }
