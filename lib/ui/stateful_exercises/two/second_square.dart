@@ -14,7 +14,8 @@ class SecondSquare extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 600),
       height: height,
       width: width,
       color: color,
