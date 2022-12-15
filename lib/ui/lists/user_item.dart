@@ -12,12 +12,11 @@ class UserItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     print('Building element number ${user.firstName}');
-    return Container(
-      height: 100,
-      width: double.maxFinite,
-      child: Center(
-        child: Text(user.firstName),
-      ),
+    return ListTile(
+      title: Text(user.firstName),
+      subtitle: Text(user.lastName),
+      leading: Icon(Icons.people),
+      
     );
   }
 }
