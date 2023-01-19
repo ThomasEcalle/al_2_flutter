@@ -2,6 +2,8 @@ import 'package:al_2/ui/home_screen/home_screen.dart';
 import 'package:al_2/ui/layouts/layouts.dart';
 import 'package:al_2/ui/lists/lists.dart';
 import 'package:al_2/ui/settings_screen/settings_screen.dart';
+import 'package:al_2/ui/webservices/webservices_screen.dart';
+import 'package:al_2/ui/webservices/webservices_with_builder_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const Lists(),
+      home: const WebservicesWithBuilderScreen(),
     );
   }
 }
